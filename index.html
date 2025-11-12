@@ -1,165 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ride</title>
 
-    <title> Ride </title>
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 </head>
-<body>
-    <div class="bg-light md-start">
-   <div class="container bg-dark rounded-3 py-3">
-  <ul class="nav justify-content-center align-items-center">
-    <li class="nav-item">
-      <a class="nav-link text-white fw-semibold" aria-current="page" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white fw-semibold" href="#">How it Works</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white fw-semibold" href="#">About</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-white fw-semibold" href="#">Contact Us</a>
-    </li>
-    <li class="nav-item ms-3">
-      <a class="nav-link" href="#">
-        <button class="btn btn-danger rounded-pill px-4 py-1 text-white fw-semibold shadow-sm">
-          Sign Up
-        </button>
-      </a>
-    </li>
-  </ul>
-</div>
- <div class="container my-5">
-  <div class="row align-items-center">
-    
-    <!-- Left Column -->
-    <div class="col-md-6 text-start">
-      <h1 class="display-4 fw-bold text-tomato mb-3">
-        Get a Ride <br> Give a Ride
-      </h1>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-white" href="#">Ride</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">How it Works</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white fw-semibold" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="d-none d-lg-block">
+        <a href="#"><button class="btn btn-danger rounded-pill px-4 py-2 fw-semibold shadow-sm">Sign Up</button></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="container my-5">
+    <div class="row align-items-center text-center text-md-start">
+      <div class="col-md-6">
+        <h1 class="display-5 fw-bold text-dark mb-3">Get a Ride <br> Give a Ride</h1>
+        <p class="lead fw-semibold mb-4">
+          Your journey starts here. <br>
+          Safe, reliable, and convenient rides at your fingertips.
+        </p>
+        <a href="#"><button class="btn btn-danger rounded-pill px-4 py-2 fw-semibold shadow-sm">Get Started</button></a>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0 text-center">
+        <img src="static/images/Hero Vector.png" alt="Ride illustration" class="img-fluid">
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Section -->
+  <section class="container-fluid bg-white py-5 rounded-4 shadow-sm">
+    <div class="text-center">
+      <h2 class="fw-bold text-dark mb-3">Your Safety Is Our Concern</h2>
       <p class="lead fw-semibold mb-4">
-        Your journey starts here. <br>
-        Safe, reliable, and convenient rides at your fingertips.
+        All drivers and clients on Ride go through a verification process, enhancing everyone’s security.
       </p>
-      <a href="#">
-        <button class="btn btn-danger rounded-pill px-4 py-2 text-white fw-semibold shadow-sm">
-          Get Started
-        </button>
-      </a>
     </div>
 
-    <!-- Right Column -->
-    <div class="col-md-6 text-center">
-      <img src="images/Hero Vector.png" alt="Illustration of uber-like ride service" class="img-fluid">
-    </div>
-
-  </div>
-</div>
-</div>
-
-  </div>
-  <div class="container-fluid rounded-pill bg-light">
-    <h2 class="display-4 fw-bold text-tomato mb-3 text-center"> Your Safety Is our concern </h2>
-    <p class="lead fw-semibold mb-4 text-center"> All drivers and clients on Ride go through  Verification process
-      Enhancing each and everyone's security. </p>
-    <div class="container mt-5">
-  <div class="row justify-content-center text-center">
-    <div class="col-6 col-md-3 mb-4">
-        <i class="bi bi-person-badge fs-1 text-primary"></i>
-        <p class="mt-2 fw-semibold">Driver Screening</p>
-    </div>
-    <div class="col-6 col-md-3 mb-4">
-        <i class="bi bi-bell-fill fs-1 text-danger"></i>
-        <p class="mt-2 fw-semibold">In-app SOS</p>
-    </div>
-   
-  </div>
-
-</div>
-
-
-  </div>
-    <!-- Left Column -->
-    <div class=" my-5 p-4 text-start">
-      <h1 class="display-4 fw-bold text-tomato mb-3 text-center">
-      About Ride
-      </h1>
-      <p class="lead fw-semibold mb-4 text-center">
-        Ride is a convenient and affordable <br>
-        ride-hailing plartform designed to connect drivers and passengers effectively.
-      <br>
-      </p>
-      <div class="text-center my-4">
-  <a href="#">
-    <button class="btn btn-danger rounded-pill px-4 py-2 text-white fw-semibold shadow-sm">
-      Get Started
-    </button>
-  </a>
-</div>
-<!-- Footer Start -->
-<footer class="bg-dark text-light pt-5 pb-4">
-  <div class="container">
-    <div class="row">
-
-      <!-- About Section -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">Ride</h5>
-        <p>Your journey starts here. Safe, reliable, and convenient rides at your fingertips. Experience comfort and punctuality with every trip.</p>
+    <div class="container mt-4">
+      <div class="row justify-content-center text-center">
+        <div class="col-6 col-sm-4 col-md-3 mb-4">
+          <i class="bi bi-person-badge fs-1 text-primary"></i>
+          <p class="mt-2 fw-semibold">Driver Screening</p>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3 mb-4">
+          <i class="bi bi-bell-fill fs-1 text-danger"></i>
+          <p class="mt-2 fw-semibold">In-app SOS</p>
+        </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Quick Links -->
-      <div class="col-md-2 mb-4">
-        <h6 class="fw-bold">Quick Links</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-light text-decoration-none">Home</a></li>
-          <li><a href="#" class="text-light text-decoration-none"> How it Works</a></li>
-          <li><a href="#" class="text-light text-decoration-none">  About </a></li>
-          <li><a href="#" class="text-light text-decoration-none"> Contact Us</a></li>
-        </ul>
-      </div>
+  <!-- About Section -->
+  <section class="container text-center my-5 py-4">
+    <h2 class="fw-bold text-danger mb-3">About Ride</h2>
+    <p class="lead fw-semibold mb-4">
+      Ride is a convenient and affordable ride-hailing platform designed to connect drivers and passengers effectively.
+    </p>
+    <a href="#"><button class="btn btn-danger rounded-pill px-4 py-2 fw-semibold shadow-sm">Get Started</button></a>
+  </section>
 
-      <!-- Support -->
-      <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Support</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Safety</a></li>
-          <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
-        </ul>
-      </div>
-
-      <!-- Social Media -->
-      <div class="col-md-3 mb-4">
-        <h6 class="fw-bold">Follow Us</h6>
-        <div class="d-flex gap-3">
-          <a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="text-light fs-4"><i class="bi bi-twitter"></i></a>
-          <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-4">
+          <h5 class="fw-bold">Ride</h5>
+          <p>Safe, reliable, and convenient rides at your fingertips. Experience comfort and punctuality with every trip.</p>
+        </div>
+        <div class="col-md-2">
+          <h6 class="fw-bold">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="#" class="text-light text-decoration-none">How it Works</a></li>
+            <li><a href="#" class="text-light text-decoration-none">About</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold">Support</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Safety</a></li>
+            <li><a href="#" class="text-light text-decoration-none">FAQs</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6 class="fw-bold">Follow Us</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light fs-4"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light fs-4"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light fs-4"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light fs-4"><i class="bi bi-linkedin"></i></a>
+          </div>
         </div>
       </div>
 
-    </div>
-
-    <hr class="bg-light">
-
-    <div class="row">
-      <div class="col text-center">
+      <hr class="bg-light mt-4">
+      <div class="text-center">
         <p class="mb-0">&copy; 2025 Ride. All rights reserved.</p>
       </div>
     </div>
-  </div>
-</footer>
-<!-- Footer End -->
+  </footer>
 
-    </div>
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
